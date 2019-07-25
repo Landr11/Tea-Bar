@@ -52,6 +52,26 @@ a {
 }
 
 /* Globals */
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-family: var(--slantedText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: capitalize;
+  color: var(--primaryColor);
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 /* Navbar */
 
 
@@ -253,3 +273,48 @@ a {
 }
 
 /*End of Skills Section */
+
+
+/* About Section */
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--primaryColor);
+  border: 0.5rem solid var(--primaryColor);
+  border-radius: 1rem;
+  /* overflow  stops the image from spilling over*/
+  overflow: hidden;
+}
+
+.about-picture {
+  width: 100%;
+  /*removes the padding/margin underneath */
+  display: block;
+  transition: var(--mainTransition);
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  margin: 1rem 0;
+  /* Set the maximum width the content takes */
+  max-width: 26rem;
+}
+
+@media screen and (min-width:992px) {
+
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+/* End of About Section */
