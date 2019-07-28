@@ -455,3 +455,30 @@ a {
 }
 
 /* End of Contact Section  */
+
+/* Footer */
+.footer {
+  background: var(--mainDark);
+  text-align: center;
+}
+
+.social-icon {
+  color: var(--mainWhite);
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  transition: var(--mainTransition);
+}
+
+.social-icon:hover {
+  color: var(--primaryColor);
+}
+
+.footer-text {
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  letter-spacing: var(--letterSpacing);
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+/* End of Footer */
