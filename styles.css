@@ -499,10 +499,14 @@ a {
   border-bottom-right-radius: 0.5rem;
   text-align: center;
   font-size: 1.3rem;
-  letter-spacing: var(--letterSpacing);
+  /* letter-spacing: var(--letterSpacing); */
   color: var(--mainWhite);
   text-transform: capitalize;
   padding: 2.5rem 0 1rem 0;
+}
+
+.letter-space {
+  letter-spacing: var(--letterSpacing);
 }
 
 .service-btn {
