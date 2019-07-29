@@ -537,6 +537,17 @@ a {
   padding: 0.2rem;
   border-radius: 1rem;
   margin: 2rem 0;
+  /* box shadow styling */
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(76, 87, 84, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(76, 87, 84, 0.75);
+  box-shadow: 5px 5px 2px 0px rgba(76, 87, 84, 0.75);
+  transition: var(--mainTransition);
+}
+
+.service-card:hover {
+  -webkit-box-shadow: 10px 10px 4px 2px rgba(76, 87, 84, 0.75);
+  -moz-box-shadow: 10px 10px 4px 2px rgba(76, 87, 84, 0.75);
+  box-shadow: 10px 10px 4px 2px rgba(76, 87, 84, 0.75);
 }
 
 @media screen and (min-width: 768px) {
@@ -554,6 +565,28 @@ a {
     margin-right: 3.333%;
   }
 }
+
+.service-img-container {
+  position: relative;
+}
+
+.service-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 2rem;
+  background: var(--secondaryColor);
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--primaryColor);
+  color: var(--mainDark);
+  transform: translate(-50%, 50%);
+  /* box shadow */
+  -webkit-box-shadow: 3px 15px 5px 0px rgba(76, 87, 84, 0.75);
+  -moz-box-shadow: 3px 15px 5px 0px rgba(76, 87, 84, 0.75);
+  box-shadow: 3px 15px 5px 0px rgba(76, 87, 84, 0.75);
+}
+
 
 /* End of Services Section */
 
